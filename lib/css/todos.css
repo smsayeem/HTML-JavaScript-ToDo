@@ -1,0 +1,79 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #FBD3E9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #247289, #E1EFF3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #247289, #E1EFF3);  
+
+}
+
+h1{
+	background-color:#2980b9; 
+	color: white;
+	margin:0; 
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+li{
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #DE5145;		/*used color picker 'pixel'*/
+
+}
+li:nth-child(2n){
+	background-color: #f7f7f7;		/*for every second li*/
+}
+span{
+	background-color: #e74c3c;
+	height: 40px;
+	width: 0;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	display: inline-block; /*like an inline elements can have a width and a height. work as same as float*/
+	transition: 0.2s linear;
+	opacity: 0;
+}
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+
+}
+input{
+	font-size: 18px;
+	color:#2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+input:focus{
+	background-color: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+#container{
+	/*border: 2px solid gray;*/
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.3); 
+	width: 360px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+}
+.fa-plus{
+	float: right;
+}
+.completed{
+	color:gray;
+	text-decoration: line-through;
+}
